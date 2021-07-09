@@ -1,15 +1,40 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale=1.0">
-        <link rel="stylesheet" ty pe="text/css" href= "style.css"/>
-        <title>Calculator 2.0</title>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href= "style.css"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculator</title>
     </head>
 
+
     <body>
-        <header>
-            <p>Calculator 2.0</p>
-    </header>
+        <div class="calculator-grid">
+            <div class="output">
+                <div data-previous class="previous"></div>
+                <div data-current class="current"></div>
+            </div>
+            <h1>C A L C U L A T O R</h1>
+            <button all-clear class = "span-two">AC</button>
+            <button delete>DEL</button>
+            <button operation>÷</button>
+            <button number>1</button>
+            <button number>2</button>
+            <button number>3</button>
+            <button operation>*</button>
+            <button number>4</button>
+            <button number>5</button>
+            <button number>6</button>
+            <button operation>+</button>
+            <button number>7</button>
+            <button number>8</button>
+            <button number>9</button>
+            <button operation>-</button>
+            <button number>.</button>
+            <button number>0</button>
+            <button equals class="span-two">=</button>
+        </div>
+    <script src="app.js"></script>
     </body>
 </html>

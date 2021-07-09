@@ -1,5 +1,70 @@
-p {
-    justify-content: flex;
-    margin-top: 150px; 
-    font-size: 100px; 
+*, *::before, *::after {
+    box-sizing: border-box; 
+    font-family: 'Zen Loop'; 
+    font-weight: normal; 
+}
+body {
+    padding: 0; 
+    margin: 0; 
+    background-color: #210070; 
+}
+
+.calculator-grid {
+    display: grid; 
+    justify-content: center; 
+    align-content: center; 
+    min-height: 100vh; 
+    grid-template-columns: repeat(4, 100px); 
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px); 
+}
+
+.calculator-grid > button {
+    cursor: pointer; 
+    font-size: 2rem; 
+    border: 1px solid white; 
+    outline: none; 
+    color: white; 
+    background-color: #213970;
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.span-two {
+    grid-column: span 2; 
+}
+
+.output {
+    grid-column: 1 / -1; 
+    background-color: rgba(0, 0, 0, .75);
+    display: flex; 
+    align-items: flex-end; 
+    justify-content: space-around; 
+    border: 1px solid white;
+    flex-direction: column; 
+    padding: 10px; 
+    word-wrap: break-word; 
+    word-break: break-all; 
+}
+
+.output .previous {
+    color: rgba(255, 255, 255, 0.75); 
+    font-size: 1.5rem; 
+}
+
+.output .current {
+    color: white; 
+    font-size: 2.5rem; 
+}
+
+.calculator-grid h1 {
+    color: white; 
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%) ;
+    font-size: 30px;
+    font-family: 'Zen Loop';
 }

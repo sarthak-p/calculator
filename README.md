@@ -1,4 +1,4 @@
-# Calculator 2.0 
+# Calculator
 
 On-screen calculator using JavaScript, HTML, and CSS.
 
